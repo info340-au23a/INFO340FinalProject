@@ -2,7 +2,7 @@
 
 This repository contains code for an interactive information web app, created for the _Client-Side Web Development_ course at the UW iSchool.
 
-Group Member: Yiyi Wu, Fangzhou Xie, Yuanxi Li
+Group Member: Yiyi(Yisa) Wu, Fangzhou Xie, Yuanxi Li
 
 ### Problem/Data Domain
 
