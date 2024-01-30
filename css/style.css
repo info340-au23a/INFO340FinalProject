@@ -1,38 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-h1 {
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
 }
 
-table {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-th {
-    height: 2rem;
-    text-align: left;
-    color: #1db954;
-    background-color: #d3d3d3;
+section {
+    padding: 20px;
 }
 
-td, th {
-    padding: .5em;
-    border-bottom: 1px solid #d3d3d3;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-td img {
-    width: 100px;
-    height: 100px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #eee;
+.search-bar {
+    margin-bottom: 20px;
 }
 
-tbody tr:hover {
-    background-color: pink;
+.species-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.chat-input {
+    margin-top: 10px;
+}
+
+.question-form {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    border: none;
 }
