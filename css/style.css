@@ -6,14 +6,14 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #62417d;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
 nav {
-    background-color: #555;
+    background-color: #8d60b2;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -24,7 +24,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #62417d;
     color: #fff;
     padding: 10px;
     text-align: center;
