@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
 body {
     font-family: 'Nunito Sans', Arial, sans-serif;
     line-height: 1.6;
@@ -6,38 +14,160 @@ body {
     font-size: 16px;
 }
 
+.container, nav ul {
+    flex-direction: row;
+}
+
+body .container:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #683e73;
+    padding: 1rem;
+    color: white;
+}
+
 header {
     font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+
+
+#links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin: 20px;
     text-align: center;
-    background-color: #683e73;
-    color: #fff;
-    padding: 10px;
 }
 
-.group-members {
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item {
+    margin: 10px;
+}
+
+form {
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
     margin-top: 20px;
-    font-weight: bold;
 }
 
-.problem-domain {
-    margin-top: 20px;
-}
-
-.app-description {
-    margin-top: 20px;
-}
-
+.group-members,
+.problem-domain,
+.app-description,
 .app-feature {
-    margin-top: 10px;
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.problem-domain, .app-description, .app-feature{
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-   
 }
 
+img {
+    width: 50%;
+    height: auto;
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 598px) {
+    #hamburger-menu{
+        display: none;
+    }
+    #links a {
+        display: block;
+        color: white;
+        font-size: 2.5rem;
+        margin-right: 0.5em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-color: #f4f4f4;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .about-us p, footer p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-us {
+        flex: 1 1 60%;
+    }
+
+    .fungi-video {
+        flex: 1 1 40%;
+    }
+
+    .fungi-video iframe {
+        width: 100%;
+        height: 300px; /* Fixed height for larger screens */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px; /* Increase base font size for better readability */
+    }
+
+    nav a {
+        padding: 1.5rem;
+    }
+
+    .about-us, .fungi-video {
+        padding: 2rem;
+    }
+}
