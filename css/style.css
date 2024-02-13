@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -10,25 +11,26 @@ body {
     font-size: 16px;
 }
 
-header {
-    font-family: 'Raleway', Helvetica, sans-serif;
-    text-align: center;
+body .container:first-child {
     background-color: #683e73;
-    color: #fff;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-nav {
+header, nav {
     color: white;
-    background-color: #683e73;
-    padding: .5rem 0 1rem 0;
-    text-align: center; /
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+header {
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
 
 nav li {
