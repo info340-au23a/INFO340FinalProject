@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
     font-family: 'Nunito Sans', Arial, sans-serif;
     line-height: 1.6;
@@ -6,12 +11,40 @@ body {
     font-size: 16px;
 }
 
+body .container:first-child {
+    background-color: #683e73;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header, nav {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     font-family: 'Raleway', Helvetica, sans-serif;
-    text-align: center;
-    background-color: #683e73;
-    color: #fff;
-    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .group-members {
@@ -38,7 +71,7 @@ header {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
 
 img {
