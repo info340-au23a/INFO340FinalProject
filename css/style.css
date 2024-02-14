@@ -1,7 +1,13 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+title {
+    display: none;
 }
 
 body {
@@ -12,26 +18,29 @@ body {
     font-size: 16px;
 }
 
+.container, nav ul {
+    flex-direction: row;
+}
+
 body .container:first-child {
-    background-color: #683e73;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #683e73;
     padding: 1rem;
-}
-
-header, nav {
     color: white;
 }
+
+header {
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+
 
 #links {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-header {
-    font-family: 'Raleway', Helvetica, sans-serif;
 }
 
 nav li {
@@ -48,36 +57,50 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.group-members {
-    margin-top: 20px;
-    font-weight: bold;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.problem-domain {
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item {
+    margin: 10px;
+}
+
+form {
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
     margin-top: 20px;
 }
 
-.app-description {
-    margin-top: 20px;
-}
-
+.group-members,
+.problem-domain,
+.app-description,
 .app-feature {
-    margin-top: 10px;
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.problem-domain, .app-description, .app-feature{
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 img {
     width: 50%;
     height: auto;
+
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -8,22 +8,51 @@
     <title>Community - Funguy</title>
 </head>
 <body>
-    <header>
-        <h1>Funguy</h1>
+    <div class="container">
+        <header>
+            <h1>Funguy</h1>
+        </header>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
                 <li><a href="product.html">Product</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <section class="our-community">
-            <h2>Our Community</h2>
-            <p>Join our community of fungi enthusiasts! Share your findings, ask questions, and connect with others.</p>
+        <section class="chat-section">
+            <h2>Chat</h2>
+            <div id="chat-messages"></div>
+            <input type="text" id="messageInput" placeholder="Type your message">
+            <button">Send</button>
+        </section>
+
+        <section class="group-chat-section">
+            <h2>Group Chat</h2>
+            <select id="groupChatSelect">
+                <option value="group1">Group 1</option>
+                <option value="group2">Group 2</option>
+            </select>
+            <div id="groupChatMessages"></div>
+            <input type="text" id="groupMessageInput" placeholder="Type your group message">
+            <button">Send</button>
+        </section>
+
+        <section class="post-section">
+            <h2>Create Post</h2>
+            <textarea id="postInput" placeholder="Write your post"></textarea>
+            <button>Post</button>
+        </section>
+
+        <section class="comment-section">
+            <h2>Comments</h2>
+            <div id="comments"></div>
+            <input type="text" id="commentInput" placeholder="Write a comment">
+            <button>Comment</button>
         </section>
     </main>
 
