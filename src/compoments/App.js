@@ -1,40 +1,55 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import About from './components/About';
 import Community from './components/Community';
 import Product from './components/Product';
 
 function App() {
   return (
-    <div>
-      <div class="container">
-        <header>
+    <Router>
+      <div>
+        <div className="container">
+          <header>
             <h1>Funguy</h1>
-            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
-        </header>
-        <nav class="links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="product.html">Product</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main>
-        <section class="about-us">
-            <h2>About Us</h2>
-            <p>Learn more about our mission, vision, and the team behind Funguy.</p>
-            <div class="fungi-video">
-                <iframe src="https://www.youtube.com/embed/BlcKBKJ8uro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="hamburger-menu">
+              <a href="#">
+                <i className="fa fa-bars" aria-label="menu"></i>
+              </a>
             </div>
-        </section>
-    </main>
+          </header>
+          <nav className="links">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/community">Community</Link>
+              </li>
+              <li>
+                <Link to="/product">Product</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</p>
-    </footer>
-    </div>
+        <main>
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/community" component={Community} />
+            <Route path="/product" component={Product} />
+            <Route path="/" exact>
+            </Route>
+          </Switch>
+        </main>
+
+        <footer>
+          <p>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
