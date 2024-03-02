@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # INFO 340 Project
 
 This repository contains code for an interactive information web app, created for the _Client-Side Web Development_ course at the UW iSchool.
@@ -9,7 +8,7 @@ Group Member: Yiyi(Yisa) Wu, Fangzhou Xie, Yuanxi Li
 
 
 The site can be viewd at https://funguy-ff742.web.app
-=======
+
 # Fuguy
 
 This repository contains code for an interactive web app. created for the Client-Side Web Development course at the UW iSchool.
