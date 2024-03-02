@@ -1,13 +1,15 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'; 
 
-const Product = () => {
+const Education = () => {
   return (
     <div>
-      <h2>Product</h2>
+      <Link to="/community">
+          <button>Community</button></Link>
+      <h2>Education</h2>
     </div>
   );
 };
 
-export default Product;
 

@@ -1,38 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function NavBar() {
+export const NavBar = () => {
+
+  const handleClick = (e, path) => {
+    console.log(`${path} link clicked`);
+  };
+
   return (
     <nav>
       <ul className="nav" id="navs">
+        
         <li className="nav-item">
-          <a className="nav-link" href="#/">
-            Home
-          </a>
+        <Link to="/about" onClick={(e) => handleClick(e, '/about')}>About</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#/">
-            Community
-          </a>
+        <Link to="/community" onClick={(e) => handleClick(e, '/community')}>Community</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#/">
-            Product
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#/">
-            About Us
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#/">
-            Contact
-          </a>
+          <Link to="/education" onClick={(e) => handleClick(e, '/education')}>Education</Link>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
 
-export { NavBar };
