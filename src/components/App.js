@@ -1,41 +1,90 @@
 import React from 'react';
-import About from './components/About';
-import Community from './components/Community';
-import Product from './components/Product';
+
+// import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { NavBar } from './Navigation';
+// import About from './components/About';
+// import Community from './components/Community';
+// import Product from './components/Product';
 
 function App() {
   return (
-    <div>
-      <div class="container">
-        <header>
+    // <Router>
+      <div>
+        <div className="container">
+          <header>
             <h1>Funguy</h1>
-            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
-        </header>
-        <nav class="links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="product.html">Product</a></li>
-            </ul>
-        </nav>
-    </div>
+            <div id="hamburger-menu">
+              <a href="#">
+                <i className="fa fa-bars" aria-label="menu"></i>
+              </a>
+            </div>
+          </header>
+          <div id="nav" className="col-3">
+            <NavBar />
+          </div>
+        </div>
 
-    <main>
-        <section class="about-us">
-            <h2>About Us</h2>
-            <p>Learn more about our mission, vision, and the team behind Funguy.</p>
-            <div class="fungi-video">
-                <iframe src="https://www.youtube.com/embed/BlcKBKJ8uro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <main>
+        <section class="introduction">
+            <h2>Welcome to Funguy</h2>
+            <p>Explore the fascinating world of fungi through our educational resources, interactive features, and vibrant community. Dive into the diversity of fungi and expand your knowledge with us.</p>
+            <img src="img/mushroom.jpg" alt="An orange fungi in the middle with dark background"></img>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <h3>Interactive Learning</h3>
+                <p>Engage with our interactive tools to learn about different fungi species, their habitats, and significance.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Resources</h3>
+                <p>
+                    <div class="resources">
+                        <a href="https://www.ffungi.org/" target="_blank">
+                        <img src="img/ffungi.png" alt="A black background with words"></img></a>
+                    </div>
+                    <div class="resources">
+                        <a href="https://www.mycobank.org/" target="_blank">
+                        <img src="img/mycobank.png" alt="A fungi background with words"></img></a>
+                    </div>
+                    <div class="resources">
+                        <a href="https://namyco.org/" target="_blank">
+                        <img src="img/nama.png" alt="NAMA with mashroom figure"></img></a>
+                    </div>
+                </p>
             </div>
         </section>
-    </main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Discover Fungi</legend>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" placeholder="Search fungi..."></input>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All</option>
+                    <option value="edible">Edible</option>
+                    <option value="toxic">Toxic</option>
+                </select>
+                <button type="submit">Search</button>
+            </fieldset>
+        </form>
+          {/* <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/community" component={Community} />
+            <Route path="/product" component={Product} />
+            <Route path="/" exact>
+            </Route>
+          </Switch> */}
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</p>
-    </footer>
-    </div>
+        <footer>
+          <p>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</p>
+        </footer>
+      </div>
+    // </Router>
   );
 }
 
 export default App;
+
