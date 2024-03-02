@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "fungus_name": "Penny Bun",
+    "other_names": ["Boletus edulis", "Porcini"],
+    "description": "Penny Bun is a delicious and highly sought-after edible mushroom.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Europe, North America, Asia"
+  },
+  {
+    "id": 2,
+    "fungus_name": "Agaricus bisporus",
+    "other_names": ["Button mushroom", "Portobello", "Cremini"],
+    "description": "Agaricus bisporus is one of the most commonly cultivated mushrooms worldwide.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global (cultivated)"
+  },
+  {
+    "id": 3,
+    "fungus_name": "Agaricus",
+    "other_names": [],
+    "description": "Agaricus is a genus of mushrooms that includes many well-known edible species.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 4,
+    "fungus_name": "Cordyceps",
+    "other_names": [],
+    "description": "Cordyceps is a parasitic fungus that infects insects and other arthropods.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Asia, Americas, Europe"
+  },
+  {
+    "id": 5,
+    "fungus_name": "Oyster Mushroom",
+    "other_names": [],
+    "description": "Oyster Mushroom is a widely cultivated edible mushroom with a distinctive oyster-shaped cap.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 6,
+    "fungus_name": "Fly Agaric",
+    "other_names": ["Amanita muscaria"],
+    "description": "Fly Agaric is a poisonous and psychoactive mushroom, often associated with folklore.",
+    "edible": false,
+    "other_use": null,
+    "growth_distribution": "Northern Hemisphere"
+  },
+  {
+    "id": 7,
+    "fungus_name": "Flammulina filiformis",
+    "other_names": ["Enoki mushroom"],
+    "description": "Flammulina filiformis is a cultivated edible mushroom with long, thin stems and small caps.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Asia"
+  },
+  {
+    "id": 8,
+    "fungus_name": "Chanterelle",
+    "other_names": [],
+    "description": "Chanterelle is a highly prized and edible mushroom known for its distinctive trumpet-like shape.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 9,
+    "fungus_name": "Shiitake",
+    "other_names": [],
+    "description": "Shiitake is an edible mushroom native to East Asia, commonly used in Asian cuisine.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "East Asia"
+  },
+  {
+    "id": 10,
+    "fungus_name": "Candida",
+    "other_names": [],
+    "description": "Candida is a genus of yeasts, some of which can cause infections in humans.",
+    "edible": false,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 11,
+    "fungus_name": "Lacquered Bracket",
+    "other_names": [],
+    "description": "Lacquered Bracket is a wood-decaying fungus that forms shelf-like structures on trees.",
+    "edible": false,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 12,
+    "fungus_name": "Death Cap",
+    "other_names": ["Amanita phalloides"],
+    "description": "Death Cap is a highly toxic mushroom responsible for many mushroom poisoning cases.",
+    "edible": false,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 13,
+    "fungus_name": "Amanita",
+    "other_names": [],
+    "description": "Amanita is a genus of mushrooms, some of which are deadly poisonous.",
+    "edible": false,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 14,
+    "fungus_name": "Lion's Mane",
+    "other_names": [],
+    "description": "Lion's Mane is an edible mushroom with long, shaggy spines resembling a lion's mane.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "North America, Europe, Asia"
+  },
+  {
+    "id": 15,
+    "fungus_name": "King Trumpet Mushroom",
+    "other_names": ["Pleurotus eryngii"],
+    "description": "King Trumpet Mushroom is an edible mushroom with a large, thick stem and small cap.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Mediterranean region, Asia"
+  },
+  {
+    "id": 16,
+    "fungus_name": "Sac Fungi",
+    "other_names": [],
+    "description": "Sac Fungi is a diverse group of fungi with a sac-like structure for sexual reproduction.",
+    "edible": "variable",
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 17,
+    "fungus_name": "Basidiomycetes",
+    "other_names": [],
+    "description": "Basidiomycetes is a large class of fungi that includes many important mushrooms.",
+    "edible": "variable",
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 18,
+    "fungus_name": "Chaga Mushroom",
+    "other_names": ["Inonotus obliquus"],
+    "description": "Chaga Mushroom is a medicinal fungus that grows on birch trees.",
+    "edible": "variable",
+    "other_use": "Traditional medicine",
+    "growth_distribution": "Northern Hemisphere"
+  },
+  {
+    "id": 19,
+    "fungus_name": "Pleurotus",
+    "other_names": ["Oyster Mushroom"],
+    "description": "Pleurotus is a genus of edible mushrooms, including the widely cultivated Oyster Mushroom.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 20,
+    "fungus_name": "Penicillium",
+    "other_names": [],
+    "description": "Penicillium is a genus of molds, some of which are used in the production of antibiotics.",
+    "edible": false,
+    "other_use": "Antibiotic production",
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 21,
+    "fungus_name": "Aspergillus",
+    "other_names": [],
+    "description": "Aspergillus is a genus of molds, some species of which are used in various industrial processes.",
+    "edible": "variable",
+    "other_use": "Biotechnological applications",
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 22,
+    "fungus_name": "Parasol Mushroom",
+    "other_names": ["Macrolepiota procera"],
+    "description": "Parasol Mushroom is an edible and distinctive mushroom with a large cap and slender stem.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 23,
+    "fungus_name": "Ganoderma",
+    "other_names": [],
+    "description": "Ganoderma is a genus of polypore mushrooms with medicinal properties in traditional Chinese medicine.",
+    "edible": "variable",
+    "other_use": "Traditional medicine",
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 24,
+    "fungus_name": "Straw Mushroom",
+    "other_names": ["Volvariella volvacea"],
+    "description": "Straw Mushroom is a cultivated edible mushroom with a small, round cap and a long stem.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Asia"
+  },
+  {
+    "id": 25,
+    "fungus_name": "Candida albicans",
+    "other_names": [],
+    "description": "Candida albicans is a pathogenic yeast that can cause infections in humans.",
+    "edible": false,
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 26,
+    "fungus_name": "Brewer's Yeast",
+    "other_names": ["Saccharomyces cerevisiae"],
+    "description": "Brewer's Yeast is a species of yeast used in the fermentation of beer and bread production.",
+    "edible": true,
+    "other_use": "Brewing, baking",
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 27,
+    "fungus_name": "Lactarius deliciosus",
+    "other_names": ["Saffron Milk Cap"],
+    "description": "Lactarius deliciosus is an edible mushroom with a bright orange cap and white latex.",
+    "edible": "variable",
+    "other_use": null,
+    "growth_distribution": "Europe, North America, Asia"
+  },
+  {
+    "id": 28,
+    "fungus_name": "Honey Fungus",
+    "other_names": ["Armillaria mellea"],
+    "description": "Honey Fungus is a parasitic fungus that affects woody plants and trees.",
+    "edible": "variable",
+    "other_use": null,
+    "growth_distribution": "Global"
+  },
+  {
+    "id": 29,
+    "fungus_name": "Caterpillar Fungus",
+    "other_names": ["Ophiocordyceps sinensis"],
+    "description": "Caterpillar Fungus is a parasitic fungus that infects and mummifies caterpillars.",
+    "edible": "variable",
+    "other_use": "Traditional medicine",
+    "growth_distribution": "Himalayan region, Tibet"
+  },
+  {
+    "id": 30,
+    "fungus_name": "True Morels",
+    "other_names": ["Morchella"],
+    "description": "True Morels are highly prized edible mushrooms with a distinctive honeycomb appearance.",
+    "edible": true,
+    "other_use": null,
+    "growth_distribution": "Global"
+  }
+]
