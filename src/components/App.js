@@ -1,14 +1,14 @@
 import React from 'react';
 
-// import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { NavBar } from './Navigation';
-// import About from './components/About';
-// import Community from './components/Community';
-// import Product from './components/Product';
+import About from './AboutUs';
+import Community from './Community';
+import Education from './Education';
+
 
 function App() {
   return (
-    // <Router>
       <div>
         <div className="container">
           <header>
@@ -69,20 +69,17 @@ function App() {
                 <button type="submit">Search</button>
             </fieldset>
         </form>
-          {/* <Switch>
-            <Route path="/about" component={About} />
-            <Route path="/community" component={Community} />
-            <Route path="/product" component={Product} />
-            <Route path="/" exact>
-            </Route>
-          </Switch> */}
+          {<Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/education" element={<Education />} />
+          </Routes> }
         </main>
 
         <footer>
           <p>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</p>
         </footer>
       </div>
-    // </Router>
   );
 }
 

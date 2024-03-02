@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import firebase from 'firebase/app';
-import 'firebase/database';
+//import firebase from 'firebase/app';
+//import 'firebase/database';
 
-
-function Form(prop) {
+/*function Form(prop) {
     const [entryObj, setEntryObj] = useState({
         inputTitle: '',
         inputDate: '',
@@ -83,4 +82,4 @@ function Form(prop) {
       );
     }
     
-    export default Form;
+    export default Form;*/
