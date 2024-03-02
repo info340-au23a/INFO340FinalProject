@@ -7,4 +7,4 @@ We use HTML and CSS to create this proposal, which includes the problem/data dom
 Group Member: Yiyi(Yisa) Wu, Fangzhou Xie, Yuanxi Li
 
 
-https://funguy-ff742.web.app
+The site can be viewd at https://funguy-ff742.web.app
