@@ -1,4 +1,5 @@
 import React from 'react';
+
 // import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { NavBar } from './Navigation';
 // import About from './components/About';
@@ -86,3 +87,4 @@ function App() {
 }
 
 export default App;
+
