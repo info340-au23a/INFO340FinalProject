@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom'; 
 
 const Education = () => {
@@ -10,5 +11,3 @@ const Education = () => {
     </div>
   );
 };
-
-export default Education;
