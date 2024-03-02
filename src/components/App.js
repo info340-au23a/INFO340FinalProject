@@ -1,36 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Team 5">
-    <meta name="description" content="An inclusive educational platform on fungi, offering resources and community interaction for enthusiasts and learners.">
-    <title>Funguy - Educational Platform</title>
-    <link rel="icon" href="img/icon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
+import React from 'react';
 
-</head>
-<body>
-    <!-- <div class="container">
-        <header>
+// import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { NavBar } from './Navigation';
+// import About from './components/About';
+// import Community from './components/Community';
+// import Product from './components/Product';
+
+function App() {
+  return (
+    // <Router>
+      <div>
+        <div className="container">
+          <header>
             <h1>Funguy</h1>
-        </header>
+            <div id="hamburger-menu">
+              <a href="#">
+                <i className="fa fa-bars" aria-label="menu"></i>
+              </a>
+            </div>
+          </header>
+          <div id="nav" className="col-3">
+            <NavBar />
+          </div>
+        </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="product.html">Product</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main>
+        <main>
         <section class="introduction">
             <h2>Welcome to Funguy</h2>
             <p>Explore the fascinating world of fungi through our educational resources, interactive features, and vibrant community. Dive into the diversity of fungi and expand your knowledge with us.</p>
-            <img src="img/mushroom.jpg" alt="An orange fungi in the middle with dark background">
+            <img src="img/mushroom.jpg" alt="An orange fungi in the middle with dark background"></img>
         </section>
 
         <section class="features">
@@ -44,25 +42,24 @@
                 <p>
                     <div class="resources">
                         <a href="https://www.ffungi.org/" target="_blank">
-                        <img src="img/ffungi.png" alt="A black background with words"></a>
+                        <img src="img/ffungi.png" alt="A black background with words"></img></a>
                     </div>
                     <div class="resources">
                         <a href="https://www.mycobank.org/" target="_blank">
-                        <img src="img/mycobank.png" alt="A fungi background with words"></a>
+                        <img src="img/mycobank.png" alt="A fungi background with words"></img></a>
                     </div>
                     <div class="resources">
                         <a href="https://namyco.org/" target="_blank">
-                        <img src="img/nama.png" alt="NAMA with mashroom figure"></a>
+                        <img src="img/nama.png" alt="NAMA with mashroom figure"></img></a>
                     </div>
                 </p>
             </div>
         </section>
-
         <form action="#" method="get">
             <fieldset>
                 <legend>Discover Fungi</legend>
                 <label for="search">Search:</label>
-                <input type="text" id="search" name="search" placeholder="Search fungi...">
+                <input type="text" id="search" name="search" placeholder="Search fungi..."></input>
                 <label for="category">Category:</label>
                 <select id="category" name="category">
                     <option value="all">All</option>
@@ -72,12 +69,22 @@
                 <button type="submit">Search</button>
             </fieldset>
         </form>
-    </main>
+          {/* <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/community" component={Community} />
+            <Route path="/product" component={Product} />
+            <Route path="/" exact>
+            </Route>
+          </Switch> */}
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Funguy. INFO 340 Team 5. All rights reserved.</p>
-    </footer> -->
-    <div id="root">
-    </div>
-</body>
-</html>
+        <footer>
+          <p>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</p>
+        </footer>
+      </div>
+    // </Router>
+  );
+}
+
+export default App;
+
