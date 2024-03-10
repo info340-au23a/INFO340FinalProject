@@ -1,28 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-export const NavBar = () => {
-
-  const handleClick = (e, path) => {
-    console.log(`${path} link clicked`);
-  };
-
+function NavBar() {
   return (
     <nav>
       <ul className="nav" id="navs">
-        
         <li className="nav-item">
-        <Link to="/about" onClick={(e) => handleClick(e, '/about')}>About</Link>
+          <NavLink to="/" className="nav-link">Home</NavLink>
         </li>
         <li className="nav-item">
-        <Link to="/community" onClick={(e) => handleClick(e, '/community')}>Community</Link>
+          <NavLink to="/about" className="nav-link">About</NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/education" onClick={(e) => handleClick(e, '/education')}>Education</Link>
+          <NavLink to="/community" className="nav-link">Community</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/education" className="nav-link">Education</NavLink>
         </li>
       </ul>
     </nav>
   );
-};
+}
 
-
+export default NavBar;

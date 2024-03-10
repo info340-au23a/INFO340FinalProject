@@ -1,4 +1,4 @@
-# Fuguy
+# Funguy
 
 This repository contains code for an interactive web app. created for the Client-Side Web Development course at the UW iSchool.
 
