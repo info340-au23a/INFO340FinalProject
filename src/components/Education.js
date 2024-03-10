@@ -11,3 +11,5 @@ const Education = () => {
     </div>
   );
 };
+
+
