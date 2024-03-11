@@ -1,6 +1,6 @@
 import React from 'react';
 
-function App() {
+function Home() {
   return (
         <main>
         <section class="introduction">
@@ -51,6 +51,6 @@ function App() {
     );
 }
 
-export default App;
+export default Home;
 
 
