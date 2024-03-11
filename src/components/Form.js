@@ -1,6 +1,6 @@
 import { useState } from 'react';
-//import firebase from 'firebase/app';
-//import 'firebase/database';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 /*function Form(prop) {
     const [entryObj, setEntryObj] = useState({
