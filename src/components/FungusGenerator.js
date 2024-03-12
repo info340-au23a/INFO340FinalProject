@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import fungusData from './data/fungus.json';
+import fungusData from '../data/fungus.json';
 
 const FungusGenerator = () => {
   const [randomFungus, setRandomFungus] = useState(null);

@@ -35,8 +35,6 @@ header {
     font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-
-
 #links {
     list-style-type: none;
     margin: 0;
@@ -216,4 +214,4 @@ img {
     transition: background-color 0.3s ease;
 }
 
-  
+
