@@ -1,85 +1,69 @@
-import { useState } from 'react';
-import firebase from 'firebase/app';
-import 'firebase/database';
+import React, { useState } from 'react';
+import '../index.css'; 
 
-/*function Form(prop) {
-    const [entryObj, setEntryObj] = useState({
-        inputTitle: '',
-        inputDate: '',
-        inputContent: ''
-      });
+function Form() {
+  // Define formData state with useState hook
+  const [formData, setFormData] = useState({
+    title: '',
+    date: '',
+    content: ''
+  });
 
-      const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setEntryObj({ ...entryObj, [name]: value });
-      };
-    
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        
-        const newEntry = {
-            postTitle: entryObj.inputTitle,
-            date: entryObj.inputDate,
-            content: entryObj.inputContent,
-            // Using Firebase server timestamp
-            time: firebase.database.ServerValue.TIMESTAMP,
-        };
-
-        const entryRef = firebase.database().ref('entries');
-
-        entryRef.push(newEntry)
-            .then(() => {
-                // Handle the success case
-                console.log('New entry added!');
-                // You might want to clear the form or redirect the user
-            })
-            .catch(error => {
-                // Handle any errors
-            console.error('Error writing new entry to Firebase database', error);
-        });
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    // Update formData state
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission here
+    console.log(formData);
+    // Here, you would typically send formData to your server or process it as needed
+  };
 
-      const formFields = [
-        { id: "inputTitle", name: "inputTitle", type: "text", label: "Post Title", aria: "Entry Title", placeholder: "What do you want to title this post?" },
-        { id: "inputDate", name: "inputDate", type: "date", label: "Day", aria: "Date" },
-        { id: "inputContent", name: "inputContent", type: "textarea", label: "Any fun story with Fugi?", aria: "Day Description", placeholder: "Tell your story..." }
-      ];
-    
-      return (
-        <div>
-          <h1>Create an Entry</h1>
-          <form onSubmit={handleSubmit}>
-            {formFields.map(field => (
-              <React.Fragment key={field.id}>
-                <label htmlFor={field.id}>{field.label}</label>
-                {field.type === 'textarea' ? (
-                  <textarea
-                    id={field.id}
-                    name={field.name}
-                    value={entryObj[field.name]}
-                    onChange={handleInputChange}
-                    aria-label={field.aria}
-                    placeholder={field.placeholder}
-                  />
-                ) : (
-                  <input
-                    id={field.id}
-                    type={field.type}
-                    name={field.name}
-                    value={entryObj[field.name]}
-                    onChange={handleInputChange}
-                    aria-label={field.aria}
-                    placeholder={field.placeholder}
-                  />
-                )}
-              </React.Fragment>
-            ))}
-            <button type="submit">Done</button>
-            <button type="button" onClick={() => {App.js}}>Home</button>
-          </form>
-        </div>
-      );
-    }
-    
-    export default Form;*/
+  return (
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="title" className="form-label">Post Title</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          value={formData.title}
+          onChange={handleInputChange}
+          placeholder="What do you want to title this post?"
+          className="form-input"
+        />
+
+        <label htmlFor="date" className="form-label">Day</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value={formData.date}
+          onChange={handleInputChange}
+          placeholder="mm/dd/yyyy"
+          className="form-input"
+        />
+
+        <label htmlFor="content" className="form-label">How's your fungi going on?</label>
+        <textarea
+          id="content"
+          name="content"
+          value={formData.content}
+          onChange={handleInputChange}
+          rows="4"
+          className="form-textarea"
+        ></textarea>
+
+        <button type="submit" className="form-button">Generate</button>
+      </form>
+    </div>
+  );
+}
+
+export default Form;
