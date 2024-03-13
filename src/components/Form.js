@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../index.css'; 
+import { getDatabase, ref, push } from 'firebase/database';
 
-function Form() {
-  // Define formData state with useState hook
+function Form(props) {
+
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -11,7 +12,6 @@ function Form() {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    // Update formData state
     setFormData({
       ...formData,
       [name]: value
@@ -20,9 +20,22 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-    // Here, you would typically send formData to your server or process it as needed
+    const db = getDatabase();
+    const postsRef = ref(db, 'posts');
+
+    push(postsRef, formData)
+      .then(() => {
+        console.log('Data sent successfully');
+        setFormData({
+          title: '',
+          date: '',
+          content: ''
+        });
+        props.onSubmitSuccess();
+      })
+      .catch((error) => {
+        console.error('Error sending data: ', error);
+      });
   };
 
   return (

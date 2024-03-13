@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { getDatabase, ref, onValue } from 'firebase/database';
-import Form from './Form'; 
-import '../index.css'; 
+import { getDatabase, ref, onValue, set, push } from 'firebase/database';
+import Form from './Form';
+import '../index.css';
 
 const Community = () => {
   const [entries, setEntries] = useState([]);
@@ -9,37 +9,40 @@ const Community = () => {
 
   useEffect(() => {
     const db = getDatabase();
-    const entriesRef = ref(db, 'entries');
-    const unsubscribe = onValue(entriesRef, (snapshot) => {
+    const entriesRef = ref(db, 'entries/');
+    onValue(entriesRef, (snapshot) => {
       const data = snapshot.val();
-      const entriesList = data ? Object.keys(data).map(key => ({
-        id: key,
-        ...data[key]
-      })) : [];
+      const entriesList = data ? Object.values(data) : [];
       setEntries(entriesList);
     });
-
-    return () => unsubscribe();
   }, []);
+
+  const handleSubmitSuccess = () => {
+    setShowForm(false);
+  };
+
+  const handleCreatePostClick = () => {
+    setShowForm(true);
+  };
 
   return (
     <div>
       <h2>Community</h2>
       {!showForm && (
-        <button className="form-button" onClick={() => setShowForm(true)}>
+        <button onClick={handleCreatePostClick} className="form-button">
           Create New Post
         </button>
       )}
-      {showForm && <Form />}
-      <div>
-        {entries.map((entry) => (
-          <div key={entry.id} className="entry">
-            <h3>{entry.postTitle}</h3>
+      {showForm && <Form onSubmitSuccess={handleSubmitSuccess} />}
+      <section>
+        {entries.map((entry, index) => (
+          <article key={index} className="entry">
+            <h3>{entry.title}</h3>
             <p>Date: {entry.date}</p>
             <p>{entry.content}</p>
-          </div>
+          </article>
         ))}
-      </div>
+      </section>
     </div>
   );
 };
