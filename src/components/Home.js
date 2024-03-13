@@ -33,20 +33,6 @@ function Home() {
                 </div>
             </div>
         </section>
-        <form action="#" method="get">
-            <fieldset>
-                <legend>Discover Fungi</legend>
-                <label for="search">Search:</label>
-                <input type="text" id="search" name="search" placeholder="Search fungi..."></input>
-                <label for="category">Category:</label>
-                <select id="category" name="category">
-                    <option value="all">All</option>
-                    <option value="edible">Edible</option>
-                    <option value="toxic">Toxic</option>
-                </select>
-                <button type="submit">Search</button>
-            </fieldset>
-        </form>
         </main>
     );
 }
