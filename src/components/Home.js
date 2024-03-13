@@ -17,7 +17,7 @@ function Home() {
             </div>
             <div class="feature-item">
                 <h3>Resources</h3>
-                <p>
+                <div class="container">
                     <div class="resources">
                         <a href="https://www.ffungi.org/" target="_blank">
                         <img src="img/ffungi.png" alt="A black background with words"></img></a>
@@ -30,7 +30,7 @@ function Home() {
                         <a href="https://namyco.org/" target="_blank">
                         <img src="img/nama.png" alt="NAMA with mashroom figure"></img></a>
                     </div>
-                </p>
+                </div>
             </div>
         </section>
         <form action="#" method="get">
