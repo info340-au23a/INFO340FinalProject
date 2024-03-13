@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import NavBar from './Navigation'; 
 import About from './AboutUs';
 import Community from './Community';
 import Education from './Education';
 import Home from './Home';
-import { getAuth, onAuthStateChanged, EmailAuthProvider } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, EmailAuthProvider, signOut} from 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -28,7 +29,15 @@ function App() {
     },
   };
   
-
+  const handleLogout = () => {
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      console.log("User signed out successfully");
+    }).catch((error) => {
+      console.error("Logout failed: ", error);
+    });
+  };
+  
   if (!user) {
     return (
       <div className="container">
@@ -43,7 +52,7 @@ function App() {
             <h1>Funguy</h1>
           </header>
           <div id="nav" className="col-3">
-            <NavBar />
+            <NavBar onLogout={handleLogout} /> {}
           </div>
         </div>
         
@@ -54,7 +63,7 @@ function App() {
             <Route path="/education" element={<Education />} />
           </Routes>
           <footer>
-            <div>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</div>
+            <div>&copy; 2024 Funguy. INFO 340 AA Team 5, Win 24, University of Washington.</div>
           </footer>
         </div>
     );
