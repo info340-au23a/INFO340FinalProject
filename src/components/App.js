@@ -63,7 +63,7 @@ function App() {
             <Route path="/education" element={<Education />} />
           </Routes>
           <footer>
-            <div>&copy; 2024 Funguy. INFO 340 Team 5, Win 24, University of Washington.</div>
+            <div>&copy; 2024 Funguy. INFO 340 AA Team 5, Win 24, University of Washington.</div>
           </footer>
         </div>
     );

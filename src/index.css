@@ -113,6 +113,17 @@ img {
     border: 2px solid #9f51b3;
 }
 
+.search {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    width: 100px;
+}
+
+.search-bar {
+    width: 200px;
+}
+
 .random-fungi {
     width: 300px;
     height: 300px;
