@@ -98,7 +98,8 @@ footer {
 img {
     width: 50%;
     height: auto;
-
+    display: block;
+    margin: auto;
 }
 
 .generator {
@@ -133,6 +134,11 @@ img {
     width: 100px;
     height: 100px;
 }
+
+.about-us {
+    margin: auto;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 598px) {
