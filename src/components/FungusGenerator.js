@@ -13,13 +13,11 @@ const FungusGenerator = () => {
   return (
     <div>
       <h2>Today's Fungi For You</h2>
-      <button onClick={generateRandomFungus}>Generate Random Fungus</button>
-
       {randomFungus && (
         <div>
-          <h3>{randomFungus.fungus_name}</h3>
+          <h3> {randomFungus.fungus_name}</h3>
           <p>{randomFungus.description}</p>
-          <p>{randomFungus.edible ? 'Edible' : 'Not Edible'}</p>
+          <p>It is {randomFungus.edible ? 'edible' : 'not edible'}.</p>
           {randomFungus.other_names.length > 0 && (
             <p>Other Names: {randomFungus.other_names.join(', ')}</p>
           )}
@@ -32,6 +30,8 @@ const FungusGenerator = () => {
           )}
         </div>
       )}
+
+      <button className='generator' onClick={generateRandomFungus}>Click Here To See More Fungus</button>
     </div>
   );
 };
