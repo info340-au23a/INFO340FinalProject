@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function NavBar() {
+function NavBar({ onLogout }) {
   return (
     <nav>
       <ul className="nav" id="navs">
@@ -16,6 +16,9 @@ function NavBar() {
         </li>
         <li className="nav-item">
           <NavLink to="/education" className="nav-link">Education</NavLink>
+        </li>
+        <li className="nav-item">
+          <button onClick={onLogout} className="nav-link btn-link">Logout</button> {/* Use `onLogout` prop when the button is clicked */}
         </li>
       </ul>
     </nav>
