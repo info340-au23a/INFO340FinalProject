@@ -113,6 +113,16 @@ img {
     border: 2px solid #9f51b3;
 }
 
+.random-fungi {
+    width: 300px;
+    height: 300px;
+}
+
+.resources img {
+    width: 100px;
+    height: 100px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 598px) {
     #hamburger-menu{

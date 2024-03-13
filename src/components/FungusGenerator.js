@@ -22,10 +22,9 @@ const FungusGenerator = () => {
             <p>Other Names: {randomFungus.other_names.join(', ')}</p>
           )}
           {randomFungus.imgSrc && (
-            <img
+            <img className='random-fungi'
               src={randomFungus.imgSrc}
               alt={`Image of ${randomFungus.fungus_name}`}
-              style={{ maxWidth: '300px' }}
             />
           )}
         </div>
