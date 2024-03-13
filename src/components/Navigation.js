@@ -18,7 +18,7 @@ function NavBar({ onLogout }) {
           <NavLink to="/education" className="nav-link">Education</NavLink>
         </li>
         <li className="nav-item">
-          <button onClick={onLogout} className="nav-link btn-link">Logout</button> {/* Use `onLogout` prop when the button is clicked */}
+          <button onClick={onLogout} className="nav-link btn-link">Logout</button> 
         </li>
       </ul>
     </nav>
