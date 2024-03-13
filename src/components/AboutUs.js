@@ -3,14 +3,6 @@ import React from 'react';
 function AboutUs() {
   return (
     <div className="container">
-      <nav className="links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="community.html">Community</a></li>
-          <li><a href="product.html">Product</a></li>
-        </ul>
-      </nav>
       <main>
         <section className="about-us">
           <h2>About Us</h2>
